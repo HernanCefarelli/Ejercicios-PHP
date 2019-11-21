@@ -1,0 +1,58 @@
+body {
+    background-image: url("../images/bg-body.png");
+    margin: 0;
+    font-family: sans-serif;
+    min-width: 260px;
+}
+footer{
+    text-align: center;
+}
+.main-header {
+    text-align: center;
+    min-width: 260px;
+}
+.toggle-nav{
+background-color: transparent;
+}
+.toggle-nav span{
+    background-color: black;
+    padding: 5px;
+}
+a {
+    margin-bottom: 2px;
+    padding: 5px;
+    display: block;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    width: 25%;
+    border-radius: 100%;
+    border: solid grey 1px;
+}
+.banner{
+    display: none;
+}
+img{
+    width: 100%;
+}
+ul {
+    mask-type: unset;
+    padding: 0;
+}
+.photo-container{
+    position: relative;
+}
+.special{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20%;
+}
+.more{
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+}
