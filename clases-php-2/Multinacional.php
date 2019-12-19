@@ -36,8 +36,8 @@ class Multinacional extends Cliente implements Liquidable {
       } 
       public function liquidarHaberes(Persona $persona,float $monto)
       {
-          $persona->getCuenta()->setBalance($persona->getCuenta()->getBalance() + 500);
-          $this->cuenta->setBalance($this->cuenta->getBalance()- 500);
+          $persona->getCuenta()->setBalance($persona->getCuenta()->getBalance() + $monto);
+          $this->cuenta->setBalance($this->cuenta->getBalance()- $monto - 500);
       }
       public function mostrar()
       {

@@ -36,8 +36,8 @@ class Pyme extends Cliente implements Liquidable, Imprimible {
       } 
       public function liquidarHaberes(Persona $persona,float $monto)
       {
-          $persona->getCuenta()->setBalance($persona->getCuenta()->getBalance() + $monto - $monto*0.01);
-          $this->cuenta->setBalance($this->cuenta->getBalance()- $monto + $monto*0.01);
+          $persona->getCuenta()->setBalance($persona->getCuenta()->getBalance() + $monto);
+          $this->cuenta->setBalance($this->cuenta->getBalance()-$monto*1.01);
       }
       public function mostrar()
       {
